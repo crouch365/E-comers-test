@@ -1,4 +1,4 @@
-import { Button } from "@/shared/ui";
+import { Button, Input } from "@/shared/ui";
 import { useTranslation } from "react-i18next";
 import styles from "./Home.module.scss";
 
@@ -13,6 +13,7 @@ const HomePage = () => {
     <>
       <p className={styles.title}>Home</p>
       <Button onClick={changeLanguage}>changeLanguage</Button>
+      <Input placeholder="Search...." />
       <p>{t("hello")}</p>
     </>
   );
