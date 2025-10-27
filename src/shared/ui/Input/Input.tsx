@@ -6,8 +6,8 @@ import {
   type ReactNode,
 } from "react";
 import styles from "./Input.module.scss";
-import HideIcon from "@/shared/assets/icons/Hide.svg?react";
-import ShowIcon from "@/shared/assets/icons/Show.svg?react";
+// import HideIcon from "@/shared/assets/icons/Hide.svg?react";
+// import ShowIcon from "@/shared/assets/icons/Show.svg?react";
 import { Button } from "../Button/Button";
 
 type HTMLInputType = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
