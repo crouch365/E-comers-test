@@ -7,11 +7,11 @@ export const Theme = {
 
 export type ThemeType = (typeof Theme)[keyof typeof Theme];
 
-interface IThemeContextProps {
+interface ThemeContextProps {
   theme?: ThemeType;
   setTheme?: (theme: ThemeType) => void;
 }
 
-export const LOCAL_STORAGE_THEME_KEY = "themes";
+export const LOCAL_STORAGE_THEME_KEY = "theme";
 
-export const ThemeContext = createContext<IThemeContextProps>({});
+export const ThemeContext = createContext<ThemeContextProps>({});
